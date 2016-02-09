@@ -1,0 +1,823 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Events_all</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+</head>
+
+<body>
+    <div class="layout remodal-bg">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <strong class="logo"><a href="#">Jujus Admin</a></strong>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__item">
+                    <i class="icon-user"></i>Users
+                </a>
+                <a href="#" class="nav__item active">
+                    <i class="icon-events"></i>Events
+                </a>
+                <a href="#" class="nav__item">
+                    <i class="icon-users"></i>Groups
+                </a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="header">
+                    <button class="nav__btn">
+                        <i class="icon-burger"></i>
+                    </button>
+                    <div class="header__row">
+                        <h2 class="header__title">Users</h2>
+                        <div class="header__controls">
+                            <div class="user_name"><i class="icon-user"></i>Hello, Tove</div>
+                            <button class="header__controls-btn notification_btn">
+                                <i class="icon-notifications"></i>
+                            </button>
+                            <button class="header__controls-btn settings_btn">
+                                <i class="icon-settings"></i>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            <div class="chart-wrapper">
+                <img src="img/chart.png" alt="chart">
+            </div>
+            <div class="table-wrapper">
+                <div class="table__header">
+                    <h2 class="table__title">Users</h2>
+                    <div class="table__controls">
+                        <a data-remodal-target="modal" href="#modal" class="button button_primary">Create event</a>
+                        <a data-remodal-target="modal2" href="#modal2" class="button button">Participants</a>
+                        <a data-remodal-target="modal3" href="#modal3" class="button button_danger">Block details</a>
+                        <a data-remodal-target="modal4" href="#modal4" class="button button_primary">Unblock details</a>
+                        <a data-remodal-target="modal5" href="#modal5" class="button button_warning">Report details</a>
+                        <a data-remodal-target="modal6" href="#modal6" class="button button_warning">Report details2</a>
+                        <div class="form__element-holder with_icon">
+                            <input class="form-control middle" placeholder="Search" type="search">
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="tabs">
+                    <li class="tab active">All users</li>
+                    <li class="tab">Reported</li>
+                    <li class="tab">Blocked</li>
+                </ul>
+                <div class="tabs__content">
+                    <div class="tab__panel"></div>
+                    <div class="tab__panel"></div>
+                    <div class="tab__panel"></div>
+                </div>
+                <table class="table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>
+                                <span class="sortable">Name
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable sort">Creator
+                                    <i class="icon-table-sorted-down"></i>
+                                </span>
+                            <th>
+                                <span class="sortable">Created at
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">Start at
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">End at
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">Partic.
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">Location
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">Status
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kyiv fashion 2015</td>
+                            <td>Maksym Moskalenko</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td><a href="#" class="badge">35</a></td>
+                            <td>Lviv, Ukraine</td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Report details</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kyiv fashion 2015</td>
+                            <td>Maksym Moskalenko</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td><a href="#" class="badge">35</a></td>
+                            <td>Lviv, Ukraine</td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Report details</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kyiv fashion 2015</td>
+                            <td>Maksym Moskalenko</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td><a href="#" class="badge">35</a></td>
+                            <td>Lviv, Ukraine</td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Report details</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kyiv fashion 2015</td>
+                            <td>Maksym Moskalenko</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td><a href="#" class="badge">35</a></td>
+                            <td>Lviv, Ukraine</td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Report details</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kyiv fashion 2015</td>
+                            <td>Maksym Moskalenko</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td>29.01.16 / 6:00 PM</td>
+                            <td><a href="#" class="badge">35</a></td>
+                            <td>Lviv, Ukraine</td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Report details</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table__footer">
+                    <div class="table__filter">
+                        <span class="table__filter-text">Show</span>
+                        <div class="form__element-holder">
+                            <select class="select middle">
+                                <option value="Actions">5</option>
+                                <option value="Actions">10</option>
+                                <option value="Actions">15</option>
+                                <option value="Actions">20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="pagination__item">Previous</a>
+                        <a href="#" class="pagination__item">1</a>
+                        <a href="#" class="pagination__item">2</a>
+                        <a href="#" class="pagination__item">3</a>
+                        <a href="#" class="pagination__item">4</a>
+                        <a href="#" class="pagination__item">5</a>
+                        <a href="#" class="pagination__item">6</a>
+                        <a href="#" class="pagination__item">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="remodal modal_create-event" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <form class="form">
+            <div class="attach-photo">
+                <label class="attach-photo__label">
+                    <i class="icon-plus-circle"></i>
+                    <span id="attach-photo__text" class="attach-photo__text">Add cover image</span>
+                    <input type="file" name="photo" class="file" id="input-file" placeholder="Add cover image">
+                </label>
+            </div>
+            <div class="form__item">
+                <label class="form__label">Event name</label>
+                <div class="form__element-holder">
+                    <input class="form-control" placeholder="e.g. Birthday Party" type="text">
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="row bottom-xs">
+                    <div class="col-xs-6">
+                        <label class="form__label">Start date time</label>
+                        <div class="form__element-holder">
+                            <input class="form-control" placeholder="DD/MM/YYYY" type="date">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form__element-holder">
+                            <input class="form-control" placeholder="HH:MM" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="row bottom-xs">
+                    <div class="col-xs-6">
+                        <label class="form__label">End date time</label>
+                        <div class="form__element-holder">
+                            <input class="form-control" placeholder="DD/MM/YYYY" type="date">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form__element-holder">
+                            <input class="form-control" placeholder="HH:MM" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <label class="form__label">Location</label>
+                <div class="form__element-holder">
+                    <input class="form-control" placeholder="e.g. Lviv, Ukraine" type="text">
+                </div>
+            </div>
+            <div class="form__item">
+                <label class="form__label">Details</label>
+                <div class="form__element-holder">
+                    <textarea class="textarea" placeholder="Your comment here..."></textarea>
+                </div>
+            </div>
+            <div class="form__item">
+                <label class="form__label">Categories</label>
+                <div class="form__element-holder">
+                    <select class="select">
+                        <option value="Actions">Actions</option>
+                        <option value="Actions">Report</option>
+                        <option value="Actions">Block details</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__item">
+                <label class="form__label">Tags</label>
+                <div class="form__element-holder">
+                    <div class="chip">
+                        Tag
+                        <i class="icon-close-circle"></i>
+                    </div>
+                    <div class="chip">
+                        blablabla
+                        <i class="icon-close-circle"></i>
+                    </div>
+                    <div class="chip">
+                        blblblblblbl
+                        <i class="icon-close-circle"></i>
+                    </div>
+
+                    <input class="form-control" placeholder="e.g. Lviv, Ukraine" type="text">
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="switcher-row">
+                    <span class="switcher-text">Private</span>
+                    <div class="switcher on">
+                        <div class="switcher__line"></div>
+                        <div class="switcher__circle"></div>
+                    </div>
+                </div>
+                <div class="switcher-row">
+                    <span class="switcher-text">Participants can invite people</span>
+                    <div class="switcher off">
+                        <div class="switcher__line"></div>
+                        <div class="switcher__circle"></div>
+                    </div>
+                </div>
+                <div class="switcher-row">
+                    <span class="switcher-text">Event host is visible</span>
+                    <div class="switcher off">
+                        <div class="switcher__line"></div>
+                        <div class="switcher__circle"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="button button_primary button_large button_block">Add user to the block list</button>
+        </form>
+    </div>
+
+    <div class="remodal modal_participants" data-remodal-id="modal2">
+        <div class="table-wrapper">
+            <div class="table__header">
+                <h2 class="table__title">Participants</h2>
+                <div class="table__controls">
+                    <div class="form__element-holder with_icon">
+                        <input class="form-control middle" placeholder="Search" type="search">
+                        <i class="icon-search"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="tabs">
+                <li class="tab active">All users</li>
+                <li class="tab">Reported</li>
+                <li class="tab">Blocked</li>
+            </ul>
+            <div class="tabs__content">
+                <div class="tab__panel"></div>
+                <div class="tab__panel"></div>
+                <div class="tab__panel"></div>
+            </div>
+            <table class="table">
+                <thead class="table_header">
+                <tr>
+                    <th>Photo</th>
+                    <th>Name
+                        <i class="icon-table-sort"></i>
+                    </th>
+                    <th>Age
+                        <i class="icon-table-sort"></i>
+                    </th>
+                    <th>Status
+                        <i class="icon-table-sort"></i>
+                    </th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                        </td>
+                        <td><a href="#" class="link">Nicole Herrera</a></td>
+                        <td>21</td>
+                        <td>
+                            <span class="label blocked fixed-width">Blocked</span>
+                            <span class="label reported fixed-width">Reported</span>
+                        </td>
+                        <td>
+                            <div class="form__item">
+                                <div class="form__element-holder">
+                                    <select class="select small">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Actions">Report</option>
+                                        <option value="Actions">Block details</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                        </td>
+                        <td><a href="#" class="link">Nicole Herrera</a></td>
+                        <td>21</td>
+                        <td>
+                            <span class="label blocked fixed-width">Blocked</span>
+                            <span class="label reported fixed-width">Reported</span>
+                        </td>
+                        <td>
+                            <div class="form__item">
+                                <div class="form__element-holder">
+                                    <select class="select small">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Actions">Report</option>
+                                        <option value="Actions">Block details</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                        </td>
+                        <td><a href="#" class="link">Nicole Herrera</a></td>
+                        <td>21</td>
+                        <td>
+                            <span class="label blocked fixed-width">Blocked</span>
+                            <span class="label reported fixed-width">Reported</span>
+                        </td>
+                        <td>
+                            <div class="form__item">
+                                <div class="form__element-holder">
+                                    <select class="select small">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Actions">Report</option>
+                                        <option value="Actions">Block details</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table__footer">
+                <div class="table__filter">
+                    <span class="table__filter-text">Show</span>
+                    <div class="form__element-holder">
+                        <select class="select middle">
+                            <option value="Actions">5</option>
+                            <option value="Actions">10</option>
+                            <option value="Actions">15</option>
+                            <option value="Actions">20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="pagination__item">Previous</a>
+                    <a href="#" class="pagination__item">1</a>
+                    <a href="#" class="pagination__item">2</a>
+                    <a href="#" class="pagination__item">3</a>
+                    <a href="#" class="pagination__item">4</a>
+                    <a href="#" class="pagination__item">5</a>
+                    <a href="#" class="pagination__item">6</a>
+                    <a href="#" class="pagination__item">Next</a>
+                </div>
+            <button data-remodal-action="close" class="remodal-close"></button>
+        </div>
+    </div>
+
+    <div class="remodal modal_block" data-remodal-id="modal3">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h2 class="modal__title">Are you sure you want to block <span class="modal__username">Ernest Woods</span></h2>
+        <div class="reasons block">
+            <h3 class="reasons__title">Please choose reasons:</h3>
+            <ul class="reasons__list">
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-emoticon-devil"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate behaviour</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-photos"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate photos</h4>
+                </li>
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-name"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate name</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-comment"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-description"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+            </ul>
+        </div>
+        <form class="form">
+            <div class="form__element-holder">
+                <textarea class="textarea" placeholder="Your comment here..."></textarea>
+            </div>
+        </form>
+        <button class="button button_danger button_large button_block">Add user to the block list</button>
+    </div>
+
+
+    <div class="remodal modal_unblock" data-remodal-id="modal4">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h2 class="modal__title">Are you sure you want to block <span class="modal__username">Ernest Woods</span></h2>
+        <div class="reasons block">
+            <h3 class="reasons__title">Blocked reasons:</h3>
+            <ul class="reasons__list">
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-emoticon-devil"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate behaviour</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-photos"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate photos</h4>
+                </li>
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-name"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate name</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-comment"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-description"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+            </ul>
+        </div>
+        <form class="form">
+            <div class="form__element-holder">
+                <textarea class="textarea" placeholder="Your comment here..."></textarea>
+            </div>
+        </form>
+        <button class="button button_primary button_large button_block">Unblock user</button>
+    </div>
+
+
+    <div class="remodal modal_report" data-remodal-id="modal5">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h2 class="modal__title">Are you sure you want to report <span class="modal__username">Ernest Woods</span></h2>
+        <div class="reasons report">
+            <h3 class="reasons__title">Please choose reasons:</h3>
+            <ul class="reasons__list">
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-emoticon-devil"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate behaviour</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-photos"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate photos</h4>
+                </li>
+                <li class="reasons__item checked">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-name"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate name</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-comment"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+                <li class="reasons__item">
+                    <div class="reasons__img-wrapper">
+                        <div class="reasons__img">
+                            <i class="icon-description"></i>
+                        </div>
+                        <div class="reasons__check-icon">
+                            <i class="icon-not-checked"></i>
+                        </div>
+                    </div>
+                    <h4 class="reasons__item-title">Inappropriate comments</h4>
+                </li>
+            </ul>
+        </div>
+        <form class="form">
+            <div class="form__element-holder">
+                <textarea class="textarea" placeholder="Your comment here..."></textarea>
+            </div>
+        </form>
+        <button class="button button_warning button_large button_block">Add user to the block list</button>
+    </div>
+
+    <div class="remodal modal_report-details" data-remodal-id="modal6">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="table-wrapper">
+            <div class="table__header">
+                <h2 class="table__title">Ernest Woods</h2>
+            </div>
+            <table class="table">
+                <thead class="table_header">
+                <tr>
+                    <th>
+                         <span class="sortable sort">Reporter
+                            <i class="icon-table-sorted-down"></i>
+                        </span>
+                    </th>
+                    <th>
+                        Comment
+                    </th>
+                    <th>
+                        Inappropriate actions
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="#" class="link">Maksym666</a></td>
+                    <td>
+                        “A lot of Inappropriate comments! Block him!”
+                    </td>
+                    <td>
+                        <span class="label blocked fixed-width">Blocked</span>
+                        <span class="label reported fixed-width">Reported</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="link">Maksym666</a></td>
+                    <td>
+                        “A lot of Inappropriate comments! Block him!”
+                    </td>
+                    <td>
+                        <span class="label blocked fixed-width">Blocked</span>
+                        <span class="label reported fixed-width">Reported</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="link">Maksym666</a></td>
+                    <td>
+                        “A lot of Inappropriate comments! Block him!”
+                    </td>
+                    <td>
+                        <span class="label blocked fixed-width">Blocked</span>
+                        <span class="label reported fixed-width">Reported</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="table__footer">
+                <div class="table__filter">
+                    <span class="table__filter-text">Show</span>
+                    <div class="form__element-holder">
+                        <select class="select middle">
+                            <option value="Actions">5</option>
+                            <option value="Actions">10</option>
+                            <option value="Actions">15</option>
+                            <option value="Actions">20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="pagination__item">Previous</a>
+                    <a href="#" class="pagination__item">1</a>
+                    <a href="#" class="pagination__item">2</a>
+                    <a href="#" class="pagination__item">3</a>
+                    <a href="#" class="pagination__item">4</a>
+                    <a href="#" class="pagination__item">5</a>
+                    <a href="#" class="pagination__item">6</a>
+                    <a href="#" class="pagination__item">Next</a>
+                </div>
+            </div>
+            <div class="buttons-wrapper">
+                <button class="button button_warning button_large button_block">Send warrning message</button>
+                    <p class="buttons-wrapper__text">or you can</p>
+                <div class="row">
+                    <div class="col-xs-6"><button class="button button_middle button_block">Block user</button></div>
+                    <div class="col-xs-6"><button class="button button_middle button_block">Cancel reports</button></div>
+                </div>
+            </div>
+        </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/remodal.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

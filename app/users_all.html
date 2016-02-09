@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User_all</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <strong class="logo"><a href="#">Jujus Admin</a></strong>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__item active">
+                    <i class="icon-user"></i>Users
+                </a>
+                <a href="#" class="nav__item">
+                    <i class="icon-events"></i>Events
+                </a>
+                <a href="#" class="nav__item">
+                    <i class="icon-users"></i>Groups
+                </a>
+            </nav>
+        </aside>
+        <div class="content">
+            <header class="header">
+                    <button class="nav__btn">
+                        <i class="icon-burger"></i>
+                    </button>
+                    <div class="header__row">
+                        <h2 class="header__title">Users</h2>
+                        <div class="header__controls">
+                            <div class="user_name"><i class="icon-user"></i>Hello, Tove</div>
+                            <button class="header__controls-btn notification_btn">
+                                <i class="icon-notifications"></i>
+                            </button>
+                            <button class="header__controls-btn settings_btn">
+                                <i class="icon-settings"></i>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            <div class="chart-wrapper">
+                <img src="img/chart.png" alt="chart">
+            </div>
+            <div class="table-wrapper">
+                <div class="table__header">
+                    <h2 class="table__title">Users</h2>
+                    <div class="table__controls">
+                        <div class="form__element-holder with_icon">
+                            <input class="form-control middle" placeholder="Search" type="search">
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="tabs">
+                    <li class="tab active">All users</li>
+                    <li class="tab">Reported</li>
+                    <li class="tab">Blocked</li>
+                </ul>
+                <div class="tabs__content">
+                    <div class="tab__panel"></div>
+                    <div class="tab__panel"></div>
+                    <div class="tab__panel"></div>
+                </div>
+                <table class="table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>Photo</th>
+                            <th>
+                                <span class="sortable sort">Name
+                                    <i class="icon-table-sorted-down"></i>
+                                </span>
+                            </th>
+                            <th>
+                                <span class="sortable">Age
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>Description</th>
+                            <th>
+                                <span class="sortable">Status
+                                    <i class="icon-table-sort"></i>
+                                </span>
+                            </th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_2.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label fixed-width">Available</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="users-portrait"><img src="img/user_1.png" alt="user portrait"></div>
+                            </td>
+                            <td><a href="#" class="link">Nicole Herrera</a></td>
+                            <td>21</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error </td>
+                            <td>
+                                <span class="label blocked fixed-width">Blocked</span>
+                                <span class="label reported fixed-width">Reported</span>
+                            </td>
+                            <td>
+                                <div class="form__item">
+                                    <div class="form__element-holder">
+                                        <select class="select small">
+                                            <option value="Actions">Actions</option>
+                                            <option value="Actions">Report</option>
+                                            <option value="Actions">Block details</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table__footer">
+                    <div class="table__filter">
+                        <span class="table__filter-text">Show</span>
+                        <div class="form__element-holder">
+                            <select class="select middle">
+                                <option value="Actions">5</option>
+                                <option value="Actions">10</option>
+                                <option value="Actions">15</option>
+                                <option value="Actions">20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="pagination__item">Previous</a>
+                        <a href="#" class="pagination__item">1</a>
+                        <a href="#" class="pagination__item">2</a>
+                        <a href="#" class="pagination__item">3</a>
+                        <a href="#" class="pagination__item">4</a>
+                        <a href="#" class="pagination__item">5</a>
+                        <a href="#" class="pagination__item">6</a>
+                        <a href="#" class="pagination__item">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/remodal.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

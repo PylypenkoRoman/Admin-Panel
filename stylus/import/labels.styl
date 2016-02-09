@@ -1,0 +1,20 @@
+.label
+  padding: 3px 10px
+  border-radius: 10px
+  line-height 14px
+  font-size: 12px
+  text-align: center
+  display: inline-block
+  color: #fff
+  height 20px
+  box-sizing: border-box
+  background: $dark_gray
+  &.blocked
+    background: $red
+  &.reported
+    background: $yellow
+  &.fixed-width
+    width: 70px
+
+.label + .label
+  margin-left: 5px

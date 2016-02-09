@@ -1,0 +1,71 @@
+.nav
+    padding 30px 0
+    &__item
+        padding 15px 20px 15px 55px
+        display block
+        color: $light_gray
+        text-decoration: none
+        font-size: 14px
+        text-transform: uppercase
+        line-height: 14px
+        letter-spacing: 0.150em
+        position relative
+        i
+            font-size 24px
+            height 26px
+            top: 50%
+            margin-top: -13px
+            position absolute
+            left: 20px
+        &:hover,
+        &.active
+            background: #2d2e2f
+            color: #fff
+            i
+                color: #fff
+    &.collapsed
+        .nav__item
+            padding 15px 20px
+            text-align: center
+            font-size: 0
+            i
+                font-size: 24px
+                width: 24px
+                left: 50%
+                margin-left: -12px
+    &__btn
+        position: absolute
+        top: 50%
+        height: 22px
+        margin-top: -11px
+        width: 26px
+        left: 30px
+        border: 0
+        background: transparent
+        padding: 0
+        text-align: center
+        line-height: 26px
+        outline: 0
+        i
+          font-size: 22px
+        &:after
+            content: ""
+            border-top: 3px solid transparent
+            border-bottom: 3px solid transparent
+            border-left: 4px solid transparent
+            border-right: 4px solid $light_red
+            height 1px
+            width 1px
+            position absolute
+            left: -10px
+            top: 50%
+            margin-top: -4px
+        &.active
+            left: 20px
+            &:after
+                border-left: 4px solid $light_red
+                border-right: 4px solid transparent
+                left: auto
+                right:  -10px
+
+

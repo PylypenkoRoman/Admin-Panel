@@ -1,0 +1,66 @@
+.reasons
+    margin-bottom: 30px
+    &__title
+        text-align: center
+        font-size: 18px
+        font-weight: normal
+        margin: 0 0 20px
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 90px
+    &__img-wrapper
+        height: 100px
+        width: 90px
+        background: #999c9f
+        border-radius: 2px
+        margin-bottom: 10px
+        position: relative
+        cursor: pointer
+        text-align: center
+        line-height: 50%
+    &__img
+        color: #fff
+        text-align: center
+        width: 50px
+        height: 50px
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-top: -25px
+        margin-left: -25px
+        font-size: 50px
+    &__check-icon
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 6px
+        font-size: 20px
+        right: 6px
+        text-align center
+        color: #fff
+    &__item-title
+        text-align: center
+        margin: 0
+        line-height: 18px
+        font-size: 14px
+        font-weight: normal
+        color: #2f313d
+    &.block
+        .reasons__title
+            color: $red
+        .reasons__item
+            &.checked, &:hover
+                .reasons__img-wrapper
+                    background: $red
+    &.report
+        .reasons__title
+            color: $yellow
+        .reasons__item
+            &.checked, &:hover
+                .reasons__img-wrapper
+                    background: $yellow
